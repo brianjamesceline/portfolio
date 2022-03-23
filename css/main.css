@@ -542,4 +542,60 @@ h1 {
     display: none;
   }
 }
+
+.homepage {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content min-content 1fr min-content min-content;
+      grid-template-columns: -webkit-min-content -webkit-min-content 1fr -webkit-min-content -webkit-min-content;
+      grid-template-columns: min-content min-content 1fr min-content min-content;
+  -ms-grid-rows: (min-content)[5];
+      grid-template-rows: repeat(5, -webkit-min-content);
+      grid-template-rows: repeat(5, min-content);
+}
+
+.homepage h1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-family: cormorantsc-light;
+  font-size: 80px;
+  text-align: center;
+  margin: auto;
+  padding-top: 250px;
+  color: #6d7e5a;
+}
+
+.homepage h2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-family: gudea;
+  font-size: 25px;
+  text-align: center;
+  margin: auto;
+  padding-top: 5px;
+  color: #6d6a6a;
+}
+
+.homepage h3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-family: ephesis;
+  font-size: 35px;
+  text-align: center;
+  margin: auto;
+  padding-top: 280px;
+  color: #6d6a6a;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,38 @@
 .homepage {
-  &__homepage {
+  display: grid;
+  grid-template-columns: min-content min-content 1fr min-content min-content;
+  grid-template-rows: repeat(5, min-content);
+
+  h1 {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
     font-family: cormorantsc-light;
+    font-size: 80px;
+    text-align: center;
+    margin: auto;
+    padding-top: 250px;
+    color: #6d7e5a;
+  }
+
+  h2 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    font-family: gudea;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    color: #6d6a6a;
+  }
+
+  h3 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    font-family: ephesis;
+    font-size: 35px;
+    text-align: center;
+    margin: auto;
+    padding-top: 280px;
+    color: #6d6a6a;
   }
 }
