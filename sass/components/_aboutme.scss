@@ -1,0 +1,46 @@
+.aboutme {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: min-content min-content 1fr 1fr;
+
+  h1 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    font-family: ephesis;
+    color: #6d7e5a;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 200px;
+  }
+
+  img {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    width: 350px;
+    height: 350px;
+    margin-left: 120px;
+    margin-right: 50px;
+  }
+
+  h2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+    font-family: gudea;
+    color: #a09c9c;
+    font-size: 45px;
+    text-align: center top;
+    padding-top: 30px;
+    margin-left: 100px;
+  }
+
+  p {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+    font-family: gudea;
+    color: #a09c9c;
+    font-size: 24px;
+    text-align: justify;
+    padding-top: 100px;
+    margin-left: 100px;
+  }
+}

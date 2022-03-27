@@ -1,4 +1,4 @@
-.homepage {
+.home {
   display: grid;
   grid-template-columns: min-content min-content 1fr min-content min-content;
   grid-template-rows: repeat(5, min-content);
@@ -7,7 +7,7 @@
     grid-row: 1 / 2;
     grid-column: 3 / 4;
     font-family: cormorantsc-light;
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
     margin: auto;
     padding-top: 250px;
@@ -18,7 +18,7 @@
     grid-row: 2 / 3;
     grid-column: 3 / 4;
     font-family: gudea;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     margin: auto;
     padding-top: 5px;
@@ -26,13 +26,13 @@
   }
 
   h3 {
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     grid-column: 3 / 4;
     font-family: ephesis;
     font-size: 35px;
     text-align: center;
     margin: auto;
-    padding-top: 280px;
+    padding-top: 320px;
     color: #6d6a6a;
   }
 }
