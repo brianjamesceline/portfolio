@@ -733,4 +733,38 @@ h1 {
   text-align: center;
   padding: 0px;
 }
+
+.contactme {
+  background-color: #6d7e5a;
+  display: block;
+}
+
+.contactme .wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contactme h1 {
+  font-family: gudea;
+  color: #ffffff;
+  font-size: 60px;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.contactme a {
+  font-family: gudea;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-left: 0px;
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */
