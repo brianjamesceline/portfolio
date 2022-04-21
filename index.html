@@ -30,6 +30,10 @@
     grid-template-rows: 1fr;
   }
 
+  body {
+  font-family: Arial;
+  margin: 0;
+  }
 </style>
 
 </head>
@@ -113,6 +117,7 @@
     </div>
   </myskills>
 
+
   <section class="contactme">
     <div class="wrapper">
       <h1>Let’s work together....</h1>
@@ -120,78 +125,92 @@
     </div>
   </section>
 
+
   <projects class="projects">
     <h1>Projects</h1>
 
-    <div class="container">
-      <div class="wgh-slider">
-        <input class="wgh-slider-target" type="radio" id="slide-1" name="slider" />
-        <input class="wgh-slider-target" type="radio" id="slide-2" name="slider" />
-        <input class="wgh-slider-target" type="radio" id="slide-3" name="slider" checked="checked" />
-        <input class="wgh-slider-target" type="radio" id="slide-4" name="slider" />
-        <input class="wgh-slider-target" type="radio" id="slide-5" name="slider" />
-        <div class="wgh-slider__viewport">
-          <div class="wgh-slider__viewbox">
-            <div class="wgh-slider__container">
-              <div class="wgh-slider-item">
-                <div class="wgh-slider-item__inner">
-                  <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="img/boutiqueresidences.jpg"
-                      alt="BoutiqueResidences" />
-                    <figcaption class="wgh-slider-item-figure__caption"><a
-                        href="https://f4.bcbits.com/img/a3905613628_16.jpg">BoutiqueResidences</a><span>Quantic</span>
-                    </figcaption>
-                  </figure>
-                  <label class="wgh-slider-item__trigger" for="slide-1" title="Show product 1"></label>
-                </div>
-              </div>
-              <div class="wgh-slider-item">
-                <div class="wgh-slider-item__inner">
-                  <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="img/jobplus.jpg"
-                      alt="JobPlus" />
-                    <figcaption class="wgh-slider-item-figure__caption"><a
-                        href="https://f4.bcbits.com/img/a3905613628_16.jpg">JobPlus</a><span>Quantic</span>
-                    </figcaption>
-                  </figure>
-                  <label class="wgh-slider-item__trigger" for="slide-2" title="Show product 2"></label>
-                </div>
-              </div>
-              <div class="wgh-slider-item">
-                <div class="wgh-slider-item__inner">
-                  <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="img/londonlocallets.jpg"
-                      alt="London Local Lets" />
-                    <figcaption class="wgh-slider-item-figure__caption"><a
-                        href="https://f4.bcbits.com/img/a3905613628_16.jpg">London Local Lets</a><span>Quantic</span>
-                    </figcaption>
-                  </figure>
-                  <label class="wgh-slider-item__trigger" for="slide-3" title="Show product 3"></label>
-                </div>
-              </div>
-              <div class="wgh-slider-item">
-                <div class="wgh-slider-item__inner">
-                  <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="img/propropertyservices.jpg"
-                      alt="Pro Property Services" />
-                    <figcaption class="wgh-slider-item-figure__caption"><a
-                        href="https://f4.bcbits.com/img/a3905613628_16.jpg">Propropertyservices</a><span>Quantic</span>
-                    </figcaption>
-                  </figure>
-                  <label class="wgh-slider-item__trigger" for="slide-4" title="Show product 4"></label>
-                </div>
-              </div>
-              <div class="wgh-slider-item">
-                <div class="wgh-slider-item__inner">
-                  <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="img/thejamesnoelgroup.jpg"
-                      alt="The James Noel Group" />
-                    <figcaption class="wgh-slider-item-figure__caption"><a href="https://picsum.photos/id/237/480/480">The James Noel Group</a><span>RYSY</span></figcaption>
-                  </figure>
-                  <label class="wgh-slider-item__trigger" for="slide-5" title="Show product 5"></label>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- Container for the image gallery -->
+    <div class="container">    
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+        <img src="images/jobplus.jpg" style="width:55%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/thejamesnoelgroup.jpg" style="width:55%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/londonlocallets.jpg" style="width:55%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/boutiqueresidences.jpg" style="width:55%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/propropertyservices.jpg" style="width:55%">
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column"><img class="demo cursor" src="images/jobplus.jpg" style="width:70%" onclick="currentSlide(1)" alt="JobPlus">
+        </div>
+        <div class="column"><img class="demo cursor" src="images/thejamesnoelgroup.jpg" style="width:70%" onclick="currentSlide(2)" alt="The James Noel Group">
+        </div>
+        <div class="column"><img class="demo cursor" src="images/londonlocallets.jpg" style="width:70%" onclick="currentSlide(3)" alt="London Local Lets">
+        </div>
+        <div class="column"><img class="demo cursor" src="images/boutiqueresidences.jpg" style="width:70%" onclick="currentSlide(4)" alt="Boutique Residences">
+        </div>
+        <div class="column"><img class="demo cursor" src="images/propropertyservices.jpg" style="width:70%" onclick="currentSlide(5)" alt="Pro Property Services">
         </div>
       </div>
-    </div>
+    </div> 
+    
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
 
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
   </projects>
 </body>
 </html>
