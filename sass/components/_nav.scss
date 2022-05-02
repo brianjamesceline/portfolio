@@ -5,15 +5,14 @@
 
   background-color: transparent;
   font-family: gruppo;
+  font-size: 20px;
 
   &__lblock {
+    display: flex;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-
-    display: flex;
     align-items: center;
     padding: 12rem;
-
     background-color: transparent;
   }
 

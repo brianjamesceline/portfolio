@@ -464,18 +464,19 @@ h1 {
       grid-template-rows: repeat(2, min-content);
   background-color: transparent;
   font-family: gruppo;
+  font-size: 20px;
 }
 
 .nav__lblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -618,7 +619,7 @@ h1 {
   grid-column: 1 / 2;
   font-family: ephesis;
   color: #6d7e5a;
-  font-size: 60px;
+  font-size: 70px;
   text-align: center;
   margin-left: 50px;
   padding-top: 200px;
@@ -686,7 +687,7 @@ h1 {
   grid-column: 2 / 4;
   font-family: ephesis;
   color: #6d7e5a;
-  font-size: 60px;
+  font-size: 70px;
   text-align: left;
   margin-left: 10px;
   padding-top: 200px;
@@ -768,108 +769,305 @@ h1 {
   display: block;
 }
 
+.contactme2 {
+  background-color: #6d7e5a;
+  display: block;
+}
+
+.contactme2 .wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contactme2 h1 {
+  font-family: gudea;
+  color: #ffffff;
+  font-size: 45px;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.contactme2 a {
+  font-family: gudea;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  display: block;
+}
+
 .projects {
   display: block;
-  /* Position the image container (needed to position the left and right arrows) */
-  /* Hide the images by default */
-  /* Add a pointer when hovering over the thumbnail images */
-  /* Next & previous buttons */
-  /* Position the "next button" to the right */
-  /* On hover, add a black background color with a little bit see-through */
-  /* Number text (1/3 etc) */
-  /* Container for image text */
-  /* Six columns side by side */
-  /* Add a transparency effect for thumnbail images */
 }
 
 .projects h1 {
   font-family: ephesis;
   color: #6d7e5a;
-  font-size: 60px;
+  font-size: 70px;
   text-align: center;
   margin-left: 10px;
   margin-bottom: 0px;
-  padding-top: 65px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
-.projects * {
+.connect {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: min-content min-content min-content 1fr;
+      grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content 1fr;
+      grid-template-rows: min-content min-content min-content 1fr;
+}
+
+.connect h1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  font-family: ephesis;
+  color: #6d7e5a;
+  font-size: 70px;
+  text-align: left;
+  margin: 0px 0px 10px 10px;
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
+
+.connect .connectType {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.connect .connectType {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin-bottom: 90px;
+}
+
+.connect .flexContainer1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  background-color: #ffff;
+  width: 470px;
+  height: 275px;
+  border: 1px solid #a09c9c;
+  border-radius: 0px;
+  margin-right: 10px;
+}
+
+.connect .flexContainer1 .typeBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
+}
+
+.connect .flexContainer1 .email {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: gudea;
+  color: #333333;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+.connect .flexContainer2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  background-color: #ffff;
+  width: 470px;
+  height: 275px;
+  border: 1px solid #a09c9c;
+  border-radius: 0px;
+  margin-left: 10px;
+}
+
+.connect .flexContainer2 .typeBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
+}
+
+.connect .flexContainer2 .scheduleBox {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: gudea;
+  color: #333333;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+.connect .contact {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  font-family: gudea;
+  color: #333333;
+  font-size: 40px;
+}
+
+.connect .form {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+  padding: 20px 0px;
+  margin: 0px;
+  border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.projects .container {
-  position: relative;
+.connect label {
+  font-family: gudea;
+  font-size: 25px;
 }
 
-.projects .mySlides {
-  display: none;
+.connect input[type=text] {
+  width: 100%;
+  font-family: gudea;
+  font-size: 25px;
+  padding: 20px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.projects .cursor {
-  cursor: pointer;
+.connect input[type=number] {
+  width: 100%;
+  font-family: gudea;
+  font-size: 25px;
+  padding: 20px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.projects .prev,
-.projects .next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
+.connect textarea {
+  width: 100%;
+  font-family: gudea;
+  font-size: 25px;
+  padding: 20px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.connect input[type=submit] {
+  width: 30%;
+  float: right;
+  font-family: gudea;
+  font-size: 25px;
   font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-}
-
-.projects .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.projects .prev:hover,
-.projects .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.projects .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.projects .caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
+  background-color: #6d7e5a;
   color: white;
+  padding: 14px 20px;
+  margin: 30px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.projects .row:after {
-  content: "";
-  display: table;
-  clear: both;
+.connect input[type=submit]:hover {
+  background-color: #6d6a6a;
 }
 
-.projects .column {
-  float: left;
-  width: 16.66%;
+.connect .div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
-.projects .demo {
-  opacity: 0.6;
+.footer {
+  display: block;
+  background-color: #6d7e5a;
 }
 
-.projects .active,
-.projects .demo:hover {
-  opacity: 1;
+.footer .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.footer .footerIcons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50px)[4];
+      grid-template-columns: repeat(4, 50px);
+  grid-gap: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  padding-left: 20px;
+}
+
+.footer h1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  font-family: gudea;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
 }
 /*# sourceMappingURL=main.css.map */
